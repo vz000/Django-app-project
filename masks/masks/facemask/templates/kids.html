@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+
+    <div class="row" style="margin-top: 80px;">
+    </div>
+    <h2 class="display-5 text-center" id="brandname" style="margin-bottom: 30px;">Infantil</h2>
+
+    <div class="row" style="margin-top:15px">
+      {% for brandmasks in brandmasks_list %}
+      {% if brandmasks.category == "Infantil" %}
+          <div class="col-3">
+              <div class="card border-0" style="width: 16rem;">
+                  <img height="205px" width="250px" class="card-img-top" src=" {{ brandmasks.photo }} " alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ brandmasks.marca }}</h5>
+                    <p class="card-text">Precio: ${{ brandmasks.price }}</p>
+                    <p class="card-text">Categoría: {{ brandmasks.category }}</p>
+                  </div>
+                  
+                  <div class="card-body">
+                    <a href="{{ brandmasks.enlace }}" class="card-link" style="color:rgb(240, 21, 21);">Ver más detalles y comprar</a>
+                  </div>
+              </div>
+          </div>
+      {% endif %}
+      {% endfor %}
+  </div>
+{% endblock %}

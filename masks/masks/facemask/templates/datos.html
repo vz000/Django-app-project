@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 30px; margin-top: 45px;"></div>
+    <div class="row row-margin-05">
+        <div class="col-12">
+        <h3 class="card-title mb-4 mt-1" id="brandname" style="margin-top: 30px;">Bienvenido, {{ user.first_name }}</h3>
+        <h5>Datos de usuario</h5>
+        </div>
+    </div>
+<!-- botones que complementan el "dashboard" del usuario logeado -->
+    <div class="row row-margin-05" style="margin-top: 20px;">
+        <div class="col-4">
+            <a href="{% url 'userboard' %}"><button type="button" class="btn btn-dark btn-block">Mis creaciones</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'data' %}"><button type="button" class="btn btn-outline-dark btn-block" >Mis datos</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'support' %}"><button type="button" class="btn btn-dark btn-block">Soporte</button></a>
+        </div>
+    </div>
+<!-- seccion de datos de usuario -->
+    <div class="row row-margin-05" style="margin-top: 30px;">
+        <div class="col-1">
+            <h5 id="brandname">Usuario: </h5>
+        </div>
+        <div class="col-1">
+            <h5>{{ user.username }}</h5>
+        </div>
+    </div>
+    <div class="row row-margin-05" style="margin-top: 30px;">
+        <div class="col-1">
+            <h5 id="brandname">Nombre: </h5>
+        </div>
+        <div class="col-1">
+            <h5>{{ user.first_name }}</h5>
+        </div>
+    </div>
+    <div class="row row-margin-05" style="margin-top: 30px;">
+        <div class="col-1">
+            <h5 id="brandname">Apellido(s): </h5>
+        </div>
+        <div class="col-1">
+            <h5>{{ user.last_name }}</h5>
+        </div>
+    </div>
+    <div class="row row-margin-05" style="margin-top: 30px;">
+        <div class="col-1">
+            <h5 id="brandname">Email: </h5>
+        </div>
+        <div class="col-1">
+            <h5>{{ user.email }}</h5>
+        </div>
+    </div>
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

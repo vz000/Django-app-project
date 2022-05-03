@@ -1,0 +1,15 @@
+* {
+    font-family: 'Roboto Condensed' !important;
+}
+
+#brandname {
+    font-family: Lobster !important;
+}
+
+#mainC {
+    background-color: rgb(179, 174, 174) !important;
+}
+
+textarea {
+    resize: none !important;
+ }

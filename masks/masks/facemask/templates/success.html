@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 80px;"></div>
+
+    <div class="row row-margin-05" style="margin-bottom: 30px;">
+        <h3 style="margin-top: 30px;">¡Te has registrado con éxito, ahora inicia sesión!</h3>
+    </div>
+    <div class="row row-margin-05" style="margin-top: 20px;">
+        <a style="color:white;" href="{% url 'login' %}"><button class="btn btn-primary btn-block">Iniciar sesión</button></a>
+    </div>
+
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

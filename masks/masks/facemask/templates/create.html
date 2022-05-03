@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 30px;"></div>
+    {% if user.is_authenticated %}
+        <h2 class="display-5 text-center" id="brandname" style="margin-top: 90px;">Creación de mascarilla propia</h2>
+        <form class="form" method="POST" style="margin-top: 35px; margin-bottom: 60px;">
+            {% csrf_token %}
+            {% for field in form %}
+                {% if field.label != "Usuario" %}
+                <div class="row" style="margin-bottom: 15px;"> 
+                    <div class="col-4">
+                    <h5 id="brandname">{{ field.label_tag }}</h5>
+                        {% if field.help_text %}
+                        <sup>{{ field.help_text }}</sup>
+                        {% endif %}
+                    {{ field.errors }}
+                    </div>
+                    <div class="col-4">
+                    {{ field }}
+                    </div>
+                {% else %}
+                <div class="form-group" style="visibility: hidden;"> 
+                    {{ field.label_tag }}
+                        {% if field.help_text %}
+                        <sup>{{ field.help_text }}</sup>
+                        {% endif %}
+                    {{ field.errors }}
+                    {{ field }}
+                {% endif %}
+            </div>
+            {% endfor %}
+            <input class="btn btn-secondary" type="submit" value="Submit">
+        </form>
+
+    {% else %}
+        <div class="row row-margin-05" style="margin-top: 90px;">
+        <h6 class="display-6 text-center">Lo sentimos</h6>
+    </div>
+        <div class="row row-margin-05" style="margin-top: 10px;">
+        <h6 class="display-6 text-center">Primero debes iniciar sesión</h6>
+        </div> 
+    {% endif %}
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

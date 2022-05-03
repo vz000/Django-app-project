@@ -1,0 +1,19 @@
+<form>
+        <div class="form-group">
+            <label>Correo</label>
+            <input name="" class="form-control" placeholder="Email" type="email">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+            <a class="float-right" href="#">Olvidé mi contraseña</a>
+            <label>Contraseña</label>
+            <input class="form-control" placeholder="******" type="password">
+        </div> <!-- form-group// --> 
+        <div class="form-group"> 
+        <div style="margin-top: 40px;"></div>
+        </div> <!-- form-group// -->  
+        <div class="form-group" style="margin-top: 15px;">
+            <button type="submit" style="margin-top: 15px;" class="btn btn-primary btn-block"> Ingresar  </button>
+        </div> <!-- form-group// -->                                                           
+    </form> 
+
+CookieMonster1

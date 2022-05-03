@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 30px;"></div>
+
+    <div class="jumbotron jumbotron-fluid text-center" style="background-color: white; border-top: thick black;">
+              <h1 class="display-4" id="brandname">MaSktyle</h1>
+        <p class="lead">¡Tu tienda donde encontrarás fácilmente tu cubrebocas ideal!</p>    
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img class="shopbrands" height="110px" width="73%" src="static/facemask/adidas.png"/>
+        </div>
+        <div class="col-3">
+            <img class="shopbrands" height="95px" width="75%" src="static/facemask/cooh.jpg"/>
+        </div>
+        <div class="col-3">
+            <img class="shopbrands"  height="95px" width="78%"  src="static/facemask/Old_Navy_Logo.svg.png"/>
+        </div>
+        <div class="col-3">
+            <img class="shopbrands"  height="115px" width="90%"  src="static/facemask/benetton.png"/>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid text-center" style="background-color: white; border-top: thick black;">
+        <h4 class="display-5" >Podrás encontrar varias marcas</h4>
+        <h5 class="display-6"  style="margin-bottom: 40px;">¡O crear tu propio diseño!</h5>
+        <h2 class="display-5" id="brandname">Categorías</h2>
+    </div>
+    <div class="row">
+        <div class="col-4">
+                    <div class="card border-0" style="width: 18rem;">
+                <img  height="200px" width="250px" class="card-img-top" src="static/facemask/carousel1.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Deportes</h5>
+                <p class="card-text">Aptos para poder respirar bien y estar con comodidad sin arriesgarse.</p>
+                </div>
+                
+                <div class="card-body">
+                <a href="{% url 'sports' %}" class="card-link" style="color:rgb(240, 21, 21);">Ver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-0" style="width: 18rem;">
+                <img height="205px" width="300px" class="card-img-top" src="static/facemask/carousel2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Casual</h5>
+                  <p class="card-text">Protegerse en salidas casuales o en la oficina.</p>
+                </div>
+                
+                <div class="card-body">
+                  <a href="{% url 'casual' %}" class="card-link" style="color:rgb(240, 21, 21);">Ver</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-0" style="width: 18rem;">
+                <img height="205px" width="300px" class="card-img-top" src="static/facemask/kidsmask.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Infantil</h5>
+                  <p class="card-text">No se debe olvidar de proteger a los más pequeños.</p>
+                </div>
+                
+                <div class="card-body">
+                  <a href="{% url 'kids' %}" class="card-link" style="color:rgb(240, 21, 21);">Ver</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Fuente del logo: https://fonts.google.com/specimen/Lobster -->
+<head>
+    {% load bootstrap4 %}
+ 
+	  {# CSS Bootstrap #}
+	  {% bootstrap_css %}
+        {% block head %}
+        
+        {% endblock %}
+      
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="/static/facemask/logo.svg" width="40" height="28" alt="">
+        </a>
+        <a class="navbar-brand" href="#" id="brandname">MaSktyle</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categorías
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'sports' %}">Deportes</a>
+                <a class="dropdown-item" href="{% url 'casual' %}">Casual</a>
+                <a class="dropdown-item" href="{% url 'different' %}">Raro</a>
+                <a class="dropdown-item" href="{% url 'kids' %}">Infantil</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'create' %}">Crea el tuyo </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"> </a>
+            </li>
+
+          <form class="form-inline text-right" action="{% url 'buscar' %}" method="POST">
+            {% csrf_token %}
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searched">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="visibility: hidden;">Search</button>
+          </form>
+        </ul>
+          <ul class="navbar-nav ">
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'userboard' %}">¡Hola {{ user.username }}!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'logout' %}" style="color: blueviolet;">Log Out</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+            </li>
+          {% endif %}
+  
+          </ul>
+        </div>
+      </nav>
+<div class="container" >
+  {% block content %}
+  {% endblock %}
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color: rgb(201, 197, 197); margin-top: 50px;">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Acerca de</h5>
+          <p>El sitio fue elaborado con fines de facilitar la búsqueda de un cubrebocas ideal para cada persona,
+              hoy en día es fundamental su uso.
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">¡Contáctanos!</h5>
+          <p>Ciudad de México, Gustavo A. Madero. Tel: +52 5522910000</p>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background-color: black; color: white;">© 2021 Copyright:
+      <a style="color:white;" href="#"> maskswithlove.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  {# JS y jQuery Bootstrap #}
+	  {% bootstrap_javascript jquery='full' %}
+</body>

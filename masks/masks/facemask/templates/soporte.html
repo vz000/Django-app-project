@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 30px; margin-top: 45px;"></div>
+    <div class="row row-margin-05">
+        <div class="col-12">
+        <h3 class="card-title mb-4 mt-1" id="brandname" style="margin-top: 30px;">Bienvenido, {{ user.first_name }}</h3>
+        <h5>Contacto</h5>
+        </div>
+    </div>
+<!-- botones que complementan el "dashboard" del usuario logeado -->
+    <div class="row row-margin-05" style="margin-top: 20px;">
+        <div class="col-4">
+            <a href="{% url 'userboard' %}"><button type="button" class="btn btn-dark btn-block">Mis creaciones</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'data' %}"><button type="button" class="btn btn-dark btn-block" >Mis datos</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'support' %}"><button type="button" class="btn btn-outline-dark btn-block">Soporte</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                {% if field.label != "Usuario" %}
+                <div class="row" style="margin-left: 15px;"> 
+                    <div class="col-3">
+                    {{ field.label_tag }}
+                        {% if field.help_text %}
+                        <sup>{{ field.help_text }}</sup>
+                        {% endif %}
+                    {{ field.errors }}
+                    </div>
+                    <div class="col-3">
+                    {{ field }}
+                    </div>
+                {% else %}
+                <div class="form-group" style="visibility: hidden;"> 
+                    {{ field.label_tag }}
+                        {% if field.help_text %}
+                        <sup>{{ field.help_text }}</sup>
+                        {% endif %}
+                    {{ field.errors }}
+                    {{ field }}
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                     <input style="margin-top: 40px;" class="btn btn-secondary" type="submit" value="Envíar">
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

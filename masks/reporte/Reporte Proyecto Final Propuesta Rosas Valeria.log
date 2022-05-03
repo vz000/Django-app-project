@@ -1,0 +1,399 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  14 NOV 2021 20:17
+entering extended mode
+**"./Reporte Proyecto Final Propuesta Rosas Valeria.tex"
+(Reporte Proyecto Final Propuesta Rosas Valeria.tex
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01> (A:\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(A:\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (A:\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(A:\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(A:\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(A:\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen139
+))
+(A:\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(A:\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip16
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks19
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks20
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(A:\MiKTeX\tex/latex/listings\listings.sty
+(A:\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\lst@mode=\count268
+\lst@gtempboxa=\box52
+\lst@token=\toks24
+\lst@length=\count269
+\lst@currlwidth=\dimen148
+\lst@column=\count270
+\lst@pos=\count271
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count272
+\lst@lineno=\count273
+\lst@maxwidth=\dimen151
+
+(A:\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count274
+\lst@skipnumbers=\count275
+\lst@framebox=\box53
+)
+(A:\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(A:\MiKTeX\tex/latex/vmargin\vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen152
+\PaperHeight=\dimen153
+) (A:\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count276
+\float@exts=\toks25
+\float@box=\box54
+\@float@everytoks=\toks26
+\@floatcapt=\box55
+)
+(A:\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(A:\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(A:\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(A:\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(A:\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen154
+\Gin@req@width=\dimen155
+)
+(A:\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
+\l__pdf_internal_box=\box56
+)
+(Reporte Proyecto Final Propuesta Rosas Valeria.aux)
+\openout1 = `"Reporte Proyecto Final Propuesta Rosas Valeria.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+\c@lstlisting=\count278
+
+(A:\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count279
+\scratchdimen=\dimen156
+\scratchbox=\box57
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen157
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks28
+) (A:\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(A:\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+
+ []
+
+[1
+
+{C:/Users/valer/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
+
+ []
+
+<1.png, id=12, 1028.34187pt x 578.16pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 91.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 91--93
+ [][] 
+ []
+
+<2.png, id=13, 1028.34187pt x 578.16pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 96.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 96--98
+ [][] 
+ []
+
+[3]
+<3.png, id=19, 1028.34187pt x 578.16pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 101.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 101--103
+ [][] 
+ []
+
+[4 <./1.png (PNG copy)>]
+<4.png, id=23, 1028.34187pt x 578.16pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 106.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 106--108
+ [][] 
+ []
+
+<5.png, id=24, 1028.34187pt x 578.16pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 111.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 111--113
+ [][] 
+ []
+
+[5 <./2.png (PNG copy)> <./3.png (PNG copy)>]
+<6.png, id=28, 1028.34187pt x 578.16pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 116.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 116--118
+ [][] 
+ []
+
+<7.png, id=29, 1028.34187pt x 578.16pt>
+File: 7.png Graphic file (type png)
+<use 7.png>
+Package pdftex.def Info: 7.png  used on input line 121.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 121--123
+ [][] 
+ []
+
+[6 <./4.png (PNG copy)> <./5.png (PNG copy)>]
+<8.png, id=33, 1028.34187pt x 578.16pt>
+File: 8.png Graphic file (type png)
+<use 8.png>
+Package pdftex.def Info: 8.png  used on input line 126.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 126--128
+ [][] 
+ []
+
+<9.png, id=34, 1028.34187pt x 578.16pt>
+File: 9.png Graphic file (type png)
+<use 9.png>
+Package pdftex.def Info: 9.png  used on input line 131.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 131--133
+ [][] 
+ []
+
+[7 <./6.png (PNG copy)> <./7.png (PNG copy)>]
+<10.png, id=39, 1028.34187pt x 578.16pt>
+File: 10.png Graphic file (type png)
+<use 10.png>
+Package pdftex.def Info: 10.png  used on input line 136.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 136--138
+ [][] 
+ []
+
+<11.png, id=40, 1028.34187pt x 578.16pt>
+File: 11.png Graphic file (type png)
+<use 11.png>
+Package pdftex.def Info: 11.png  used on input line 141.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 141--143
+ [][] 
+ []
+
+[8 <./8.png (PNG copy)> <./9.png (PNG copy)>]
+<12.png, id=44, 1028.34187pt x 578.16pt>
+File: 12.png Graphic file (type png)
+<use 12.png>
+Package pdftex.def Info: 12.png  used on input line 146.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 146--148
+ [][] 
+ []
+
+<13.png, id=45, 1028.34187pt x 578.16pt>
+File: 13.png Graphic file (type png)
+<use 13.png>
+Package pdftex.def Info: 13.png  used on input line 151.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 151--153
+ [][] 
+ []
+
+[9 <./10.png (PNG copy)> <./11.png (PNG copy)>]
+<14.png, id=49, 1028.34187pt x 578.16pt>
+File: 14.png Graphic file (type png)
+<use 14.png>
+Package pdftex.def Info: 14.png  used on input line 156.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 156--158
+ [][] 
+ []
+
+<15.png, id=50, 1028.34187pt x 578.16pt>
+File: 15.png Graphic file (type png)
+<use 15.png>
+Package pdftex.def Info: 15.png  used on input line 161.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 161--163
+ [][] 
+ []
+
+[10 <./12.png (PNG copy)> <./13.png (PNG copy)>]
+<16.png, id=54, 1028.34187pt x 578.16pt>
+File: 16.png Graphic file (type png)
+<use 16.png>
+Package pdftex.def Info: 16.png  used on input line 166.
+(pdftex.def)             Requested size: 512.16121pt x 284.52713pt.
+
+Overfull \hbox (42.69075pt too wide) in paragraph at lines 166--168
+ [][] 
+ []
+
+[11 <./14.png (PNG copy)>] [12 <./15.png (PNG copy)> <./16.png (PNG copy)>]
+(Reporte Proyecto Final Propuesta Rosas Valeria.aux) ) 
+Here is how much of TeX's memory you used:
+ 3538 strings out of 478864
+ 48878 string characters out of 2865146
+ 357746 words of memory out of 3000000
+ 21452 multiletter control sequences out of 15000+600000
+ 407352 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,7n,66p,754b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\valer\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><A:/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><A:/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
+xsl10.pfb><A:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><A:/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><A:/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sl12.pfb>
+Output written on "Reporte Proyecto Final Propuesta Rosas Valeria.pdf" (12 page
+s, 2163822 bytes).
+PDF statistics:
+ 87 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+

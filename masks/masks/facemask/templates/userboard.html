@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 30px; margin-top: 45px;"></div>
+    <div class="row row-margin-05">
+        <div class="col-12">
+        <h3 class="card-title mb-4 mt-1" id="brandname" style="margin-top: 30px;">Bienvenido, {{ user.first_name }}</h3>
+        <h5>Aquí podrás visualizar tus creaciones.</h5>
+        </div>
+    </div>
+<!-- botones que complementan el "dashboard" del usuario logeado -->
+    <div class="row row-margin-05" style="margin-top: 20px;">
+        <div class="col-4">
+            <a href="{% url 'userboard' %}"><button type="button" class="btn btn-outline-dark btn-block">Mis creaciones</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'data' %}"><button type="button" class="btn btn-dark btn-block">Mis datos</button></a>
+        </div>
+        <div class="col-4">
+            <a href="{% url 'support' %}"><button type="button" class="btn btn-dark btn-block">Soporte</button></a>
+        </div>
+    </div>
+
+<!-- sección de creaciones -->
+    <div class="row row-margin-05" style="margin-top: 40px;">
+        {% for maskcreator in maskcreator_list %}
+            {% if maskcreator.usuario == user.username %}
+            {% if forloop.first %}<div class="row" style="margin-top:15px">{% endif %}
+                <div class="col-3">
+                    <div class="card border-0" style="width: 16rem;">
+                        <img height="205px" width="250px" class="card-img-top" src="/static/facemask/{{ maskcreator.color }}.jpg " alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Id: {{ maskcreator.id }}</h5>
+                        <p class="card-text">Color: {{ maskcreator.color }}</p>
+                        <p class="card-text">Tipo de tela: {{ maskcreator.tela }}</p>
+                        <p class="card-text">Cantidad de capas: {{ maskcreator.capas }}</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            {% if forloop.counter|divisibleby:5 or forloop.counter|divisibleby:9 %}</div><div class="row">{% endif %}
+            {% if forloop.last %}</div>{% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}

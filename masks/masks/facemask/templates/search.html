@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'facemask/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+{% endblock %}
+{% block content %}
+    <div class="row row-margin-05" style="margin-bottom: 80px;"></div>
+    {% if searched %}
+    <h1 id="brandname" >Busqueda de: </h1> <h3> {{ searched }} </h3>
+    <br/>
+    {% for brandmask in brandmasks %}
+        {% if forloop.first %}<div class="row" style="margin-top:15px">{% endif %}
+            <div class="col-3">
+                <div class="card border-0" style="width: 16rem;">
+                    <img height="205px" width="250px" class="card-img-top" src=" {{ brandmask.photo }} " alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ brandmask.marca }}</h5>
+                    <p class="card-text">Precio: ${{ brandmask.price }}</p>
+                    <p class="card-text">Categoría: {{ brandmask.category }}</p>
+                    </div>
+                    
+                    <div class="card-body">
+                    <a href="{{ brandmask.enlace }}" class="card-link" style="color:rgb(240, 21, 21);">Ver más detalles y comprar</a>
+                    </div>
+                </div>
+            </div>
+        
+        {% if forloop.last %}</div>{% endif %}
+    {% endfor%}
+    {% else %}
+        <h1>No ingresó búsqueda</h1>
+    {% endif %}
+    
+    <div class="row row-margin-05" style="margin-bottom: 60px;"></div>
+
+{% endblock %}
